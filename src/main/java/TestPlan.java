@@ -29,15 +29,6 @@ public class TestPlan {
 
 }
 
-@Test (testName = "Delete a record")
-
-public static void deleteGuest() {
-    driver.get(Utils.BASE_URL);
-    WebForm webForm = new WebForm(driver);
-    webForm.deleteRecord();
-
-}
-
 @AfterSuite
     public static void cleanUp() throws InterruptedException {
     driver.manage().deleteAllCookies();
